@@ -14,18 +14,18 @@
             <div class="form-group">
                 
                 <label asp-for="AwesomePost.post" class="control-label">Write here <i class="fa-solid fa-pencil"></i> :</label>
-                <textarea asp-for="AwesomePost.post" class="form-control" rows="8" style="white-space: pre-wrap;"></textarea>
+                <textarea asp-for="AwesomePost.post" class="form-control neubutton" rows="8" style="white-space: pre-wrap;"></textarea>
                 <span asp-validation-for="AwesomePost.post" class="text-danger"></span>
             </div>
             <br />
             <div class="form-group">
                 <label asp-for="AwesomePost.name" class="control-label">Your name: </label>
-                <input asp-for="AwesomePost.name" class="form-control" />
+                <input asp-for="AwesomePost.name" class="form-control neubutton" />
                 <span asp-validation-for="AwesomePost.name" class="text-danger"></span>
             </div>
             <br />
             <div class="form-group mt-1">
-                <input type="submit" value="Submit" class="btn btn-outline-primary col-5" />
+                <input type="submit" value="Submit" class="btn btn-primary neubutton col-5" />
             </div>
         </form>
     </div>
