@@ -7,7 +7,19 @@
 }
 
 <div style="padding-left:1.7em; padding-right:1.7em;">
-    <h4 class="fafont" style="font-size: 1.6em;">@SD.Name</h4>
+    <h4 class="fafont" style="font-size: 1.6em;">
+        @{
+            var name = Model.AwesomePost.name;
+            if (name.Contains("Jack"))
+            {
+                <text>@SD.Mommy</text>;
+            }
+            else
+            {
+                <text>@SD.Name</text>;
+            }
+        }
+    </h4>
     
     <dl class="row">
         
